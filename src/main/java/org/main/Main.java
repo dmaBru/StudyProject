@@ -22,6 +22,7 @@ public class Main {
             System.out.println("5. Удалить задачу");
             System.out.println("6. Выполненные задачи");
             System.out.println("7. Найти задачу по совпадению");
+            System.out.println("8. Запустить фоновое сохранение задач");
             System.out.println("0. Выйти из программы");
             System.out.print("Ваше действие: ");
 
@@ -78,6 +79,11 @@ public class Main {
                         System.out.println("Введите слово из задачи");
                         String matchWord = scanner.nextLine();
                         manager.searchTasksByKeyword(matchWord);
+                    } break;
+                    case 8: {
+                        BackgroundBackup backup = new BackgroundBackup(manager);
+                        Thread thread = new Thread(backup);
+                        thread.start();
                     } break;
                     case 0: {
                         manager.saveToFile(manager.getTasks());

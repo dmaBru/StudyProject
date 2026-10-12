@@ -5,9 +5,13 @@
     "isCompleted": true
   },
   {
-    "deadline": "до 1 ноября",
     "title": "Поучить английский",
     "priority": 6,
     "isCompleted": false
+  },
+  {
+    "title": "Дать подзатыльник сидящему слева",
+    "priority": 10,
+    "isCompleted": true
   }
 ]
