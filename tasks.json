@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Погладить кота",
+    "priority": 2,
+    "isCompleted": true
+  },
+  {
+    "deadline": "до 1 ноября",
+    "title": "Поучить английский",
+    "priority": 6,
+    "isCompleted": false
+  }
+]
